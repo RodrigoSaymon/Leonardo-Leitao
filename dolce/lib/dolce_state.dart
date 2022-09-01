@@ -30,7 +30,8 @@ class DolceSonhoState extends State<DolceSonhoConfeitaria> {
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.amber),
       ),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      // home: HomePage(),
+      // initialRoute: '/',
       routes: {
         '/': (context) => HomePage(),
         catalogo: (context) => CatalogoPage()
