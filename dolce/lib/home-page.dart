@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'bottoes.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,35 +32,61 @@ class HomePage extends StatelessWidget {
                 height: 300,
               ),
             ),
+
             Bottoes(
-                palavra: 'Catálogo de Produtos',
-                onPressed: () {
-                  Navigator.of(context).pushNamed('/catalogo');
-                }),
+              palavra: 'Catalogo de Produtos',
+              caminho: '/catalogo',
+            ),
             Bottoes(
               palavra: 'Fazer um Orçamento',
-              onPressed: () {},
+              caminho: '/catalogo',
             ),
             Bottoes(
               palavra: 'Receber Pagamentos',
-              onPressed: () {},
+              caminho: '/catalogo',
             ),
             Bottoes(
               palavra: 'Cadastro de Pedidos',
-              onPressed: () {},
+              caminho: '/catalogo',
             ),
             Bottoes(
               palavra: 'Cadastro de Clientes',
-              onPressed: () {},
+              caminho: '/catalogo',
             ),
             Bottoes(
               palavra: 'Situação Financeira',
-              onPressed: () {},
+              caminho: '/catalogo',
             ),
             Bottoes(
               palavra: 'Planejamento Anual',
-              onPressed: () {},
+              caminho: '/catalogo',
             ),
+
+            // }),
+            // Bottoes(
+            //   palavra: 'Fazer um Orçamento',
+            //   onPressed: () {},
+            // ),
+            // Bottoes(
+            //   palavra: 'Receber Pagamentos',
+            //   onPressed: () {},
+            // ),
+            // Bottoes(
+            //   palavra: 'Cadastro de Pedidos',
+            //   onPressed: () {},
+            // ),
+            // Bottoes(
+            //   palavra: 'Cadastro de Clientes',
+            //   onPressed: () {},
+            // ),
+            // Bottoes(
+            //   palavra: 'Situação Financeira',
+            //   onPressed: () {},
+            // ),
+            // Bottoes(
+            //   palavra: 'Planejamento Anual',
+            //   onPressed: () {},
+            // ),
           ],
         ),
       ),

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class Bottoes extends StatelessWidget {
   String palavra;
-  Function()? onPressed;
-  Bottoes({Key? key, required this.onPressed, required this.palavra})
+  String caminho;
+  Bottoes({Key? key, required this.caminho, required this.palavra})
       : super(key: key);
 
   @override
@@ -16,7 +16,9 @@ class Bottoes extends StatelessWidget {
           backgroundColor:
               MaterialStateProperty.all(const Color.fromRGBO(255, 228, 227, 1)),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pushNamed(caminho);
+        },
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

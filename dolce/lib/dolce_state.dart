@@ -1,40 +1,25 @@
-import 'package:dolce/catalogo_page.dart';
-import 'package:dolce/home-page.dart';
 import 'package:flutter/material.dart';
+import 'catalogo_page.dart';
+import 'home-page.dart' as navegacao;
 
-class DolceSonhoConfeitaria extends StatefulWidget {
+class DolceSonhoConfeitaria extends StatelessWidget {
   const DolceSonhoConfeitaria({Key? key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => DolceSonhoState();
-}
-
-class DolceSonhoState extends State<DolceSonhoConfeitaria> {
-  void themaClaro() {
-    setState(() {
-      Brightness.light;
-    });
-  }
-
-  void themaEscuro() {
-    setState(() {
-      Brightness.dark;
-    });
-  }
-
-  @override
   Widget build(BuildContext context) {
-    var catalogo = '/catalogo';
+    // var catalogo = '/catalogo';
     return MaterialApp(
       theme: ThemeData.from(
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.amber),
+        colorScheme: ColorScheme.fromSwatch(
+          backgroundColor: Color.fromRGBO(255, 228, 227, 1),
+        ),
       ),
       debugShowCheckedModeBanner: false,
-      // home: HomePage(),
+      // home: const navegacao.HomePage(),
       // initialRoute: '/',
       routes: {
-        '/': (context) => HomePage(),
-        catalogo: (context) => CatalogoPage()
+        '/': (context) => const navegacao.HomePage(),
+        '/catalogo': (context) => const CatalogoPage()
       },
     );
   }
