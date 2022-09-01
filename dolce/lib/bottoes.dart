@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class Bottoes extends StatelessWidget {
   String palavra;
-
   Function()? onPressed;
-
   Bottoes({Key? key, required this.onPressed, required this.palavra})
       : super(key: key);
 
