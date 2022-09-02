@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'catalogo_page.dart';
 import 'home-page.dart' as navegacao;
+import 'orcamento_page.dart';
 
 class DolceSonhoConfeitaria extends StatelessWidget {
   const DolceSonhoConfeitaria({Key? key}) : super(key: key);
@@ -19,7 +20,8 @@ class DolceSonhoConfeitaria extends StatelessWidget {
       // initialRoute: '/',
       routes: {
         '/': (context) => const navegacao.HomePage(),
-        '/catalogo': (context) => const CatalogoPage()
+        '/catalogo': (context) => const CatalogoPage(),
+        '/orcamento': (context) => const OrcamentoPage()
       },
     );
   }

@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
             ),
             Bottoes(
               palavra: 'Fazer um Orçamento',
-              caminho: '/catalogo',
+              caminho: '/orcamento',
             ),
             Bottoes(
               palavra: 'Receber Pagamentos',

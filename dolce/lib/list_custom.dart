@@ -20,10 +20,17 @@ class ListCustom extends StatelessWidget {
           radius: 30,
           child: Image.network(
             imagem,
+            scale: 0.5,
           )),
-      title: Text(nome),
+      title: Text(
+        nome,
+        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      ),
       subtitle: Text(descricao),
-      trailing: Text('R\$ $preco'),
+      trailing: Text(
+        'R\$ $preco',
+        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+      ),
     );
   }
 }
