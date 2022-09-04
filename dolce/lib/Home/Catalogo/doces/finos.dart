@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'list_custom.dart';
+import '../list_custom.dart';
 
 class Finos extends StatelessWidget {
   const Finos({Key? key}) : super(key: key);

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'list_custom.dart';
+import '../list_custom.dart';
 
-class Decorados extends StatelessWidget {
-  const Decorados({Key? key}) : super(key: key);
+class Gourmet extends StatelessWidget {
+  const Gourmet({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,16 +1,20 @@
-import 'package:dolce/decorados.dart';
-import 'package:dolce/finos.dart';
-import 'package:dolce/gourmet.dart';
-import 'package:dolce/simples.dart';
 import 'package:flutter/material.dart';
 
-import 'list_custom.dart';
-import 'tab_custom.dart';
-import 'tradicional.dart';
+import '../tab_custom.dart';
+import 'doces/decorados.dart';
+import 'doces/finos.dart';
+import 'doces/gourmet.dart';
+import 'doces/simples.dart';
+import 'doces/tradicional.dart';
 
-class CatalogoPage extends StatelessWidget {
+class CatalogoPage extends StatefulWidget {
   const CatalogoPage({Key? key}) : super(key: key);
 
+  @override
+  State<CatalogoPage> createState() => _CatalogoPageState();
+}
+
+class _CatalogoPageState extends State<CatalogoPage> {
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context).size;
@@ -18,17 +22,54 @@ class CatalogoPage extends StatelessWidget {
       length: 5,
       child: Scaffold(
         appBar: AppBar(
+          actions: [
+            Container(
+                height: 20,
+                width: 150,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ElevatedButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                            const Color.fromRGBO(46, 24, 68, 1)),
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).pushNamed('/orcamento_add');
+                      },
+                      child: Row(
+                        children: const [
+                          Icon(
+                            Icons.add,
+                            size: 30,
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Item',
+                            style: TextStyle(
+                              color: Color.fromRGBO(255, 228, 227, 1),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 22,
+                            ),
+                          ),
+                        ],
+                      )),
+                ))
+          ],
           backgroundColor: const Color.fromRGBO(255, 228, 227, 1),
           title: const Text(
-            'Catalogo de Doces',
+            'Catálogo',
             style: TextStyle(
               color: Color.fromRGBO(46, 24, 68, 1),
               fontWeight: FontWeight.bold,
-              fontSize: 22,
+              fontSize: 30,
             ),
           ),
           bottom: TabBar(tabs: [
-            TabCustom(tipo: 'Tradici'),
+            TabCustom(
+              tipo: 'Tradici',
+            ),
             TabCustom(tipo: 'Gourm'),
             TabCustom(tipo: 'Finos'),
             TabCustom(tipo: 'Decora'),
