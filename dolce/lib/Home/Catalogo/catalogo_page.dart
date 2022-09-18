@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../components/user-tile.dart';
 import '../tab_custom.dart';
 import 'doces/decorados.dart';
 import 'doces/finos.dart';
@@ -23,39 +24,22 @@ class _CatalogoPageState extends State<CatalogoPage> {
       child: Scaffold(
         appBar: AppBar(
           actions: [
-            Container(
-                height: 20,
-                width: 150,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: ElevatedButton(
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(
-                            const Color.fromRGBO(46, 24, 68, 1)),
-                      ),
-                      onPressed: () {
-                        Navigator.of(context).pushNamed('/orcamento_add');
-                      },
-                      child: Row(
-                        children: const [
-                          Icon(
-                            Icons.add,
-                            size: 30,
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text(
-                            'Item',
-                            style: TextStyle(
-                              color: Color.fromRGBO(255, 228, 227, 1),
-                              fontWeight: FontWeight.bold,
-                              fontSize: 22,
-                            ),
-                          ),
-                        ],
-                      )),
-                ))
+            Row(
+              children: [
+                IconButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/novo');
+                  },
+                  icon: const Icon(
+                    Icons.add,
+                    color: Color.fromRGBO(46, 24, 68, 1),
+                  ),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+              ],
+            ),
           ],
           backgroundColor: const Color.fromRGBO(255, 228, 227, 1),
           title: const Text(
@@ -67,9 +51,7 @@ class _CatalogoPageState extends State<CatalogoPage> {
             ),
           ),
           bottom: TabBar(tabs: [
-            TabCustom(
-              tipo: 'Tradici',
-            ),
+            TabCustom(tipo: 'Tradici'),
             TabCustom(tipo: 'Gourm'),
             TabCustom(tipo: 'Finos'),
             TabCustom(tipo: 'Decora'),
