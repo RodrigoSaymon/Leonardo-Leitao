@@ -41,11 +41,10 @@ class _CatalogoPageState extends State<CatalogoPage> {
               ],
             ),
           ],
-          backgroundColor: const Color.fromRGBO(255, 228, 227, 1),
           title: const Text(
             'Catálogo',
             style: TextStyle(
-              color: Color.fromRGBO(46, 24, 68, 1),
+              color: const Color.fromRGBO(255, 228, 227, 1),
               fontWeight: FontWeight.bold,
               fontSize: 30,
             ),

@@ -7,25 +7,31 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Center(
+          child: Text(
+            'Dolce Sonho Confeitaria',
+            style: TextStyle(
+                color: Color.fromRGBO(255, 228, 227, 1),
+                fontWeight: FontWeight.bold,
+                fontSize: 22,
+                fontFamily: 'Halimun'),
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Container(
           color: const Color.fromARGB(255, 255, 255, 255),
           child: Column(
             children: [
-              const SizedBox(height: 50),
-              const Text(
-                'Dolce Sonho Confeitaria',
-                style: TextStyle(
-                    color: Color.fromRGBO(46, 24, 68, 1),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22,
-                    fontFamily: 'Halimun'),
-              ),
               Center(
-                child: Image.asset(
-                  'assets/image/novoLogo.png',
-                  width: double.infinity,
-                  height: 300,
+                child: Opacity(
+                  opacity: 0.8,
+                  child: Image.asset(
+                    'assets/image/novoLogo.png',
+                    width: double.infinity,
+                    height: 300,
+                  ),
                 ),
               ),
               Center(

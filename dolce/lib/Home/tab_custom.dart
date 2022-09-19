@@ -8,13 +8,15 @@ class TabCustom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Tab(
+      iconMargin: EdgeInsetsGeometry.infinity,
       child: Column(
         children: [
+          SizedBox(height: 10),
           Center(
             child: Text(
               tipo,
               style: const TextStyle(
-                color: Color.fromRGBO(46, 24, 68, 1),
+                color: const Color.fromRGBO(255, 228, 227, 1),
                 fontWeight: FontWeight.bold,
                 fontSize: 15,
               ),

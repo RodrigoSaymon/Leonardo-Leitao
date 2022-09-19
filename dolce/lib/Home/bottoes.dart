@@ -23,66 +23,81 @@ class Bottoes extends StatelessWidget {
         onTap: () {
           Navigator.of(context).pushNamed(caminho);
         },
-        child: Stack(children: [
-          Container(
-              width: 170,
-              height: 170,
-              child: Opacity(opacity: 0.5, child: imagem)),
-          Container(
-              decoration: BoxDecoration(
-                  // color: Colors.white,
-                  ),
+        child: Container(
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
+          child: Stack(children: [
+            Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(30))),
+                width: 175,
+                height: 175,
+                child: Opacity(
+                  opacity: 0.5,
+                  child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(30)),
+                      child: imagem),
+                )),
+            Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(30))
+                    // color: Colors.white,
+                    ),
 
-              // color: Color.fromRGBO(247, 219, 227, 1),
-              // Color.fromRGBO(46, 24, 68, 1),
+                // color: Color.fromRGBO(247, 219, 227, 1),
+                // Color.fromRGBO(46, 24, 68, 1),
 
-              width: 170,
-              height: 170,
-              alignment: Alignment.center,
-              child: Column(
-                children: [
-                  Icon(
-                    icone,
-                    size: 70,
-                    color: Color.fromRGBO(46, 24, 68, 1),
-                  ),
-                  Text(
-                    palavra,
-                    style: const TextStyle(
-                        fontSize: 27,
-                        color: Color.fromRGBO(46, 24, 68, 1),
-                        fontWeight: FontWeight.bold
-                        // Color.fromRGBO(46, 24, 68, 1),
-                        ),
-                  ),
-                ],
-              )
+                width: 175,
+                height: 175,
+                alignment: Alignment.center,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(
+                      icone,
+                      size: 70,
+                      color: Color.fromRGBO(46, 24, 68, 1),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        palavra,
+                        style: const TextStyle(
+                            fontSize: 25,
+                            color: Color.fromRGBO(46, 24, 68, 1),
+                            fontWeight: FontWeight.bold
+                            // Color.fromRGBO(46, 24, 68, 1),
+                            ),
+                      ),
+                    ),
+                  ],
+                )
 
-              //   padding: const EdgeInsets.all(8.0),
-              //   child: ElevatedButton(
-              //     style: ButtonStyle(
+                //   padding: const EdgeInsets.all(8.0),
+                //   child: ElevatedButton(
+                //     style: ButtonStyle(
 
-              //       backgroundColor: MaterialStateProperty.all(
-              //         const Color.fromRGBO(46, 24, 68, 1),
-              //       ),
-              //     ),
-              //     onPressed: ()
-              //     child: Row(
-              //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //       children: [
-              //         const Icon(Icons.check,
-              //             size: 10, color: Color.fromRGBO(255, 228, 227, 1)),
-              //         const SizedBox(
-              //           width: 10,
-              //         ),
-              //         Container(
-              //
-              //         ),
-              //       ],
-              //     ),
-              //   ),
-              ),
-        ]),
+                //       backgroundColor: MaterialStateProperty.all(
+                //         const Color.fromRGBO(46, 24, 68, 1),
+                //       ),
+                //     ),
+                //     onPressed: ()
+                //     child: Row(
+                //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //       children: [
+                //         const Icon(Icons.check,
+                //             size: 10, color: Color.fromRGBO(255, 228, 227, 1)),
+                //         const SizedBox(
+                //           width: 10,
+                //         ),
+                //         Container(
+                //
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                ),
+          ]),
+        ),
       ),
     );
   }

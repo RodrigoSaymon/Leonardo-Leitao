@@ -27,7 +27,7 @@ class _InicialPageState extends State<InicialPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: Container(
-        height: 75,
+        height: 80,
         child: GNav(
           backgroundColor: Color.fromRGBO(46, 24, 68, 1),
           selectedIndex: paginaAtual,
@@ -40,7 +40,7 @@ class _InicialPageState extends State<InicialPage> {
               icon: Icons.home,
               text: 'Home',
               textStyle: TextStyle(
-                fontSize: 30,
+                fontSize: 20,
                 color: Color.fromRGBO(255, 228, 227, 1),
               ),
               iconColor: Color.fromRGBO(255, 228, 227, 1),
@@ -55,7 +55,7 @@ class _InicialPageState extends State<InicialPage> {
               icon: Icons.attach_money,
               text: 'Orçamento',
               textStyle: TextStyle(
-                fontSize: 30,
+                fontSize: 20,
                 color: Color.fromRGBO(255, 228, 227, 1),
               ),
               iconColor: Color.fromRGBO(255, 228, 227, 1),
@@ -70,7 +70,7 @@ class _InicialPageState extends State<InicialPage> {
               icon: Icons.list,
               text: 'Catálogo',
               textStyle: TextStyle(
-                fontSize: 30,
+                fontSize: 20,
                 color: Color.fromRGBO(255, 228, 227, 1),
               ),
               iconColor: Color.fromRGBO(255, 228, 227, 1),
@@ -85,7 +85,7 @@ class _InicialPageState extends State<InicialPage> {
               icon: Icons.assignment_ind,
               text: 'Clientes',
               textStyle: TextStyle(
-                fontSize: 30,
+                fontSize: 20,
                 color: Color.fromRGBO(255, 228, 227, 1),
               ),
               iconColor: Color.fromRGBO(255, 228, 227, 1),
