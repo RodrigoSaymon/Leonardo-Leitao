@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../components/user-tile.dart';
+import '../../null_user-tile.dart';
 import '../tab_custom.dart';
 import 'doces/decorados.dart';
 import 'doces/finos.dart';

@@ -14,7 +14,7 @@ class UserList extends StatelessWidget {
       body: ListView.builder(
           itemCount: users.length,
           itemBuilder: ((context, index) =>
-              Text(users.values.elementAt(index).name))),
+              Text(users.values.elementAt(index).name.toString()))),
     );
   }
 }
