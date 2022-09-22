@@ -1,10 +1,10 @@
 import 'package:dolce/Home/Catalogo/catalogo_page.dart';
 import 'package:dolce/Home/Catalogo/novo.dart';
-import 'package:dolce/Home/Or%C3%A7amento/orcamento_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 import 'Home/home-page.dart';
+import 'orcamento_page.dart';
 
 class InicialPage extends StatefulWidget {
   const InicialPage({Key? key}) : super(key: key);

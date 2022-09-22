@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:dolce/data/dummy_users.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../models/user.dart';
+import '../user.dart';
 
 class Users with ChangeNotifier {
   final Map<String, User> _itens = {...DammyUser};

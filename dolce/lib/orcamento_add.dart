@@ -1,14 +1,14 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:dolce/avatar.dart';
-import 'package:dolce/models/user.dart';
+import 'package:dolce/user.dart';
 import 'package:dolce/provider/users.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'orcamento_page.dart';
 
-class OrcamentoAdd extends OrcamentoPage {
-  const OrcamentoAdd({Key? key}) : super(key: key);
+class OrcamentoAdd extends StatefulWidget {
+  const OrcamentoAdd({Key? key, r}) : super(key: key);
 
   @override
   State<OrcamentoAdd> createState() => _OrcamentoAddState();
@@ -53,10 +53,10 @@ class _OrcamentoAddState extends State<OrcamentoAdd> {
 
   @override
   Widget build(BuildContext context) {
-    // final user = ModalRoute?.of<int>(context)?.settings.arguments as User;
-    // _loadFormData(user);
+    final user = ModalRoute.of<dynamic>(context)!.settings.arguments as Users;
+    _loadFormData(User(name: _formData[_loadFormData]));
 
-    // print(user.name);
+    print(user);
     return Scaffold(
         appBar: AppBar(
           title: const Text(

@@ -1,4 +1,4 @@
-import 'package:dolce/models/user.dart';
+import 'package:dolce/user.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../provider/users.dart';

@@ -1,4 +1,4 @@
-import 'package:dolce/models/user.dart';
+import 'package:dolce/user.dart';
 
 var DammyUser = {
   '1': User(

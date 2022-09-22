@@ -5,10 +5,10 @@ import 'package:provider/provider.dart';
 
 import 'Home/Catalogo/catalogo_page.dart';
 import 'Home/Catalogo/novo.dart';
-import 'Home/Orçamento/orcamento_add.dart';
-import 'Home/Orçamento/orcamento_page.dart';
 import 'Home/home-page.dart';
 import 'Home/home-page.dart';
+import 'orcamento_add.dart';
+import 'orcamento_page.dart';
 
 class DolceSonhoConfeitaria extends StatelessWidget {
   const DolceSonhoConfeitaria({Key? key}) : super(key: key);
