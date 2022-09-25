@@ -7,7 +7,6 @@ class Novo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromRGBO(255, 228, 227, 1),
         title: const Text(
           'Adicionar Item',
           style: TextStyle(

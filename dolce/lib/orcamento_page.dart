@@ -39,13 +39,6 @@ class _OrcamentoPageState extends State<OrcamentoPage> {
                   '/orcamento_add',
                   arguments: user,
                 );
-                // users.put(User(
-                //     id: '2',
-                //     name: 'juli',
-                //     email: 'Juli@gmail.com',
-                //     avatarUrl:
-                //         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5N02tJapFptK4nLKRYTxzoyfaPviJx0TvaP0XAO9hkDw_VlZC9ikRkx1lhx3pAUUy85w&usqp=CAU'));
-                // users.remove(users.ByIndex(0));
               },
               icon: const Icon(Icons.add)),
         ],

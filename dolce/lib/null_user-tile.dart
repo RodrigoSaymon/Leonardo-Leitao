@@ -1,54 +1,52 @@
-// import 'package:flutter/material.dart';
-// import '../models/user.dart';
+import 'package:flutter/material.dart';
 
-// class UserTile extends ListTile {
-//   UserTile(this.user, this.ByIndex);
+import 'user.dart';
 
-//   User user;
-//   dynamic ByIndex;
-//   get i => null;
+class UserTile extends ListTile {
+  UserTile(this.user, this.ByIndex);
 
-//   @override
-//   Widget build(BuildContext context) {
-//     final avatar = user.avatarUrl == null || user.avatarUrl!.isEmpty
-//         ? CircleAvatar(child: Icon(Icons.person))
-//         : CircleAvatar(
-//             backgroundImage: NetworkImage(user.avatarUrl.toString()),
-//           );
+  User user;
+  dynamic ByIndex;
+  get i => null;
 
-//     return ListTile(
-//         leading: avatar,
-//         title: Text(
-//           user.all.elementAt(i).name.toString(),
-//           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-//         ),
-//         subtitle: Text(user.ByIndex(i).email.toString()),
-//         trailing: Container(
-//           width: 100,
-//           child: Row(
-//             children: [
-//               IconButton(
-//                   onPressed: () {
-//                     Navigator.of(context).pushNamed(
-//                       '/orcamento_add',
-//                       arguments: user,
-//                     );
-//                   },
-//                   icon: Icon(
-//                     Icons.edit,
-//                     color: Colors.orange,
-//                   )),
-//               IconButton(
-//                   onPressed: () {},
-//                   icon: Icon(
-//                     Icons.delete,
-//                     color: Colors.red,
-//                   ))
-//             ],
-//           ),
-//         )
+  @override
+  Widget build(BuildContext context) {
+    final avatar = user.avatarUrl == null || user.avatarUrl!.isEmpty
+        ? CircleAvatar(child: Icon(Icons.person))
+        : CircleAvatar(
+            backgroundImage: NetworkImage(user.avatarUrl.toString()),
+          );
 
-     
-//         );
-//   }
-// }
+    return ListTile(
+        leading: avatar,
+        title: Text(
+          user.all.elementAt(i).name.toString(),
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        ),
+        subtitle: Text(user.ByIndex(i).email.toString()),
+        trailing: Container(
+          width: 100,
+          child: Row(
+            children: [
+              IconButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(
+                      '/orcamento_add',
+                      arguments: user,
+                    );
+                  },
+                  icon: Icon(
+                    Icons.edit,
+                    color: Colors.orange,
+                  )),
+              IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.delete,
+                    color: Colors.red,
+                  ))
+            ],
+          ),
+        ));
+  }
+}

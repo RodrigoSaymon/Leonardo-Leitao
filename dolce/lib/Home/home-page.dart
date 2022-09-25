@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Bottoes(
-                            icone: Icons.home,
+                            icone: Icons.payment,
                             imagem: Image.network(
                                 'https://bebe.abril.com.br/wp-content/uploads/2016/10/receita-cupcake-gourmet-cappuccino3.jpg',
                                 fit: BoxFit.cover),
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                             caminho: '/catalogo',
                           ),
                           Bottoes(
-                            icone: Icons.abc,
+                            icone: Icons.list,
                             imagem: Image.network(
                                 'https://www.receiteria.com.br/wp-content/uploads/brigadeiro-gourmet-730x477.jpg',
                                 fit: BoxFit.cover),
@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Bottoes(
-                            icone: Icons.home,
+                            icone: Icons.request_quote,
                             imagem: Image.network(
                                 'https://www.guiadasemana.com.br/contentFiles/system/pictures/2015/5/133525/original/cake-pop.jpg',
                                 fit: BoxFit.cover),
@@ -71,7 +71,7 @@ class HomePage extends StatelessWidget {
                             caminho: '/catalogo',
                           ),
                           Bottoes(
-                            icone: Icons.home,
+                            icone: Icons.plumbing,
                             imagem: Image.network(
                                 'https://i0.wp.com/www.mildicasdemae.com.br/wp-content/uploads/2014/06/cajuzinho.jpg?resize=600%2C400&ssl=1',
                                 fit: BoxFit.cover),

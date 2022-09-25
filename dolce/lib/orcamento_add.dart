@@ -5,7 +5,6 @@ import 'package:dolce/user.dart';
 import 'package:dolce/provider/users.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'orcamento_page.dart';
 
 class OrcamentoAdd extends StatefulWidget {
   const OrcamentoAdd({Key? key, r}) : super(key: key);
@@ -31,7 +30,7 @@ class _OrcamentoAddState extends State<OrcamentoAdd> {
   var checar = [false, true];
   void contar() {
     setState(() {
-      if (numero == 0) {
+      if (numero == ['id']) {
         numero++;
       } else {
         numero--;
@@ -54,9 +53,11 @@ class _OrcamentoAddState extends State<OrcamentoAdd> {
   @override
   Widget build(BuildContext context) {
     final user = ModalRoute.of<dynamic>(context)!.settings.arguments as Users;
-    _loadFormData(User(name: _formData[_loadFormData]));
+    _loadFormData(user) {
+      _form;
+    }
 
-    print(user);
+    // print(user);
     return Scaffold(
         appBar: AppBar(
           title: const Text(
